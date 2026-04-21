@@ -15,3 +15,5 @@ load_n_predict.py (inference)
 
 exp1.py (for running experiment 4.1)
   1. Functions the same as main2, but with the ability to change between price, price', price'' on line 22, with mode being how many derivatives is desired.
+
+The dataset used to run the experiments are also given in this repo, to use them, drag them to the root folder. If there is no pickled data, the script will download the latest data.
