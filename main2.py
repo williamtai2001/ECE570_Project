@@ -189,7 +189,7 @@ if __name__=="__main__":
         test_prediction[:, i]=scaler.inverse_transform(test_prediction_scaled[:, i].reshape(-1, 1)).reshape(-1)
     actual_change=np.diff(data.values, axis=0)[split+history:]
     actual_change_change=np.diff(test_actual, axis=0)
-    print("\nLast 5 Predictions:")
+    print("\nLast 30 Predictions:")
     for col, ticker in enumerate(output_tickers):
         print(f"\n{ticker}")
         print(f"{'Actual':<12}{'Predicted':<12}{'Error':<12}{'Sign'}")
